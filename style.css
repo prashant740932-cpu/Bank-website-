@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1d2939;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    width: 250px;
+    background: #071426;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 22px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #263448;
+}
+
+.logo i {
+    color: #4da3ff;
+}
+
+.menu {
+    list-style: none;
+    padding: 15px 10px;
+}
+
+.menu li {
+    margin-bottom: 4px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #dce5f2;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 12px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu .active a {
+    background: #1769aa;
+    color: white;
+}
+
+.menu i {
+    width: 18px;
+    text-align: center;
+}
+
+.menu .logout {
+    margin-top: 15px;
+}
+
+.menu .logout a {
+    color: #ff5c6c;
+}
+
+
+/* ================= MAIN ================= */
+
+.main {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 30px;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 27px;
+    color: #102a43;
+}
+
+.header h1 i {
+    color: #0876d1;
+}
+
+.header p {
+    margin-top: 5px;
+    color: #718096;
+}
+
+.refresh {
+    padding: 10px 17px;
+    background: white;
+    border: 1px solid #ccd6e0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.refresh:hover {
+    background: #eef5fb;
+}
+
+
+/* ================= CARDS ================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.card {
+    min-height: 125px;
+    border-radius: 6px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 12px;
+}
+
+.card > i {
+    font-size: 42px;
+    opacity: 0.3;
+}
+
+.blue {
+    background: #0783e8;
+}
+
+.green {
+    background: #08a64a;
+}
+
+.yellow {
+    background: #e9a900;
+}
+
+.red {
+    background: #d91e3f;
+}
+
+
+/* ================= TRANSACTION ================= */
+
+.transaction-box {
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+    overflow: hidden;
+}
+
+.transaction-header {
+    background: #071426;
+    color: white;
+    padding: 12px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transaction-header h2 {
+    font-size: 16px;
+}
+
+.transaction-header button {
+    background: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* ================= TABLE ================= */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #f1f4f8;
+}
+
+th,
+td {
+    padding: 13px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e9ef;
+    font-size: 13px;
+}
+
+th {
+    color: #344054;
+}
+
+td {
+    color: #475467;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* ================= BADGES ================= */
+
+.badge {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.credit {
+    background: #d8f1ff;
+    color: #0073b5;
+}
+
+.debit {
+    background: #fff0c7;
+    color: #a36b00;
+}
+
+.withdrawal {
+    background: #ffdce2;
+    color: #c51636;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1100px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 210px;
+    }
+
+    .main {
+        margin-left: 210px;
+        width: calc(100% - 210px);
+        padding: 20px;
+    }
+
+    .header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+}

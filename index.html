@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Banking Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-building-columns"></i>
+            <span>Admin Panel</span>
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="customer.html">
+                    <i class="fa-solid fa-users"></i>
+                    Customer List
+                </a>
+            </li>
+
+            <li>
+                <a href="add-customer.html">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Add Customer
+                </a>
+            </li>
+
+            <li>
+                <a href="employees.html">
+                    <i class="fa-solid fa-user-tie"></i>
+                    Employees
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="payroll.html">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    Payroll
+                </a>
+            </li>
+
+            <li>
+                <a href="accounts.html">
+                    <i class="fa-solid fa-building-columns"></i>
+                    Accounts
+                </a>
+            </li>
+
+            <li>
+                <a href="deposit.html">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    Deposit
+                </a>
+            </li>
+
+            <li>
+                <a href="withdrawal.html">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Withdrawal
+                </a>
+            </li>
+
+            <li>
+                <a href="transfer.html">
+                    <i class="fa-solid fa-right-left"></i>
+                    Fund Transfer
+                </a>
+            </li>
+
+            <li>
+                <a href="beneficiaries.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    Beneficiaries
+                </a>
+            </li>
+
+            <li>
+                <a href="loans.html">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    Loans
+                </a>
+            </li>
+
+            <li>
+                <a href="reports.html">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Reports
+                </a>
+            </li>
+
+            <li class="logout">
+                <a href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP HEADER -->
+        <header class="header">
+
+            <div>
+                <h1>
+                    <i class="fa-solid fa-gauge-high"></i>
+                    Admin Dashboard
+                </h1>
+
+                <p>Banking Management System Overview</p>
+            </div>
+
+            <button class="refresh">
+                <i class="fa-solid fa-arrows-rotate"></i>
+                Refresh
+            </button>
+
+        </header>
+
+
+        <!-- DASHBOARD CARDS -->
+        <section class="cards">
+
+            <div class="card blue">
+
+                <div>
+                    <h3>Total Customers</h3>
+                    <h2>3</h2>
+                    <p>Registered Customers</p>
+                </div>
+
+                <i class="fa-solid fa-users"></i>
+
+            </div>
+
+
+            <div class="card green">
+
+                <div>
+                    <h3>Total Accounts</h3>
+                    <h2>3</h2>
+                    <p>Active Bank Accounts</p>
+                </div>
+
+                <i class="fa-solid fa-building-columns"></i>
+
+            </div>
+
+
+            <div class="card yellow">
+
+                <div>
+                    <h3>Total Employees</h3>
+                    <h2>2</h2>
+                    <p>Bank Employees</p>
+                </div>
+
+                <i class="fa-solid fa-user-tie"></i>
+
+            </div>
+
+
+            <div class="card red">
+
+                <div>
+                    <h3>Transactions</h3>
+                    <h2>9</h2>
+                    <p>Total Transactions</p>
+                </div>
+
+                <i class="fa-solid fa-right-left"></i>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRANSACTIONS -->
+        <section class="transaction-box">
+
+            <div class="transaction-header">
+
+                <h2>
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    Recent Transactions
+                </h2>
+
+                <button>View All</button>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>#</th>
+                            <th>Account Number</th>
+                            <th>Customer</th>
+                            <th>Transaction Type</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>1111111111</td>
+                            <td>Sanjay</td>
+                            <td>
+                                <span class="badge credit">
+                                    Transfer Credit
+                                </span>
+                            </td>
+                            <td>₹ 5,000.00</td>
+                            <td>05-09-2026 10:12</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>2</td>
+                            <td>2222222222</td>
+                            <td>Abhishek</td>
+                            <td>
+                                <span class="badge debit">
+                                    Transfer Debit
+                                </span>
+                            </td>
+                            <td>₹ 500.00</td>
+                            <td>05-09-2026 10:12</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>3</td>
+                            <td>3333333333</td>
+                            <td>Santosh</td>
+                            <td>
+                                <span class="badge withdrawal">
+                                    Withdrawal
+                                </span>
+                            </td>
+                            <td>₹ 4,000.00</td>
+                            <td>05-09-2026 11:06</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>4</td>
+                            <td>2222222222</td>
+                            <td>Abhishek</td>
+                            <td>
+                                <span class="badge credit">
+                                    Transfer Credit
+                                </span>
+                            </td>
+                            <td>₹ 2,000.00</td>
+                            <td>05-09-2026 11:05</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>5</td>
+                            <td>3333333333</td>
+                            <td>Santosh</td>
+                            <td>
+                                <span class="badge debit">
+                                    Transfer Debit
+                                </span>
+                            </td>
+                            <td>₹ 2,000.00</td>
+                            <td>05-09-2026 11:05</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
